@@ -1,5 +1,7 @@
 from lark import Lark, Transformer
 import json
+import networkx as nx
+import matplotlib.pyplot as plt
 
 input_path = "inputs/input1.in"
 input_strings = ["1111"]
@@ -113,22 +115,49 @@ input_data = lines
 # print(result)
 
 result, in_dict, out_dict = parser.parse(input_data)
-print(result)
-print(in_dict)
-print(out_dict)
+print(result["axons"])
+# print(in_dict)
+# print(out_dict)
 
-num_iter = -1
-if len(input_strings) == 0:
-    print("How many iterations would you like to run the simulation for? Enter a value: ", end="")
-    num_iter = int(input())
-else:
-    num_iter = len(list(input_strings[0]))
+edges = []
+for axon in result["axons"]:
+    # if axon["start_"]
+    # print("hi", result["axons"][axon])
+    edges.append(( result["axons"][axon]["start_point"], result["axons"][axon]["end_point"], 
+        {
+            "junction_values": result["axons"][axon]["junction_values"],
+            "i_or_e": result["axons"][axon]["i_or_e"]
+        }))
+    
+G = nx.DiGraph(edges)
 
-def init_computation():
-    for neuron_id in range(1, result["neuron_count"]+1):
-        print(neuron_id)
+plt.figure()
+pos = nx.spring_layout(G, seed=0)
+edge_labels = nx.get_edge_attributes(G, "junction_values")
 
-init_computation()
+# set node state positions
+# state_pos = {n: (x+0.12, y+0.05) for n, (x,y) in pos.items()}
+# draw graph
+nx.draw_networkx(G, pos, node_size=600)
+# draw node state labels
+# nx.draw_networkx_labels(G, state_pos, labels=node_states, font_color='red')
+# draw edge attributes
+
+nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
+plt.savefig("img/img.jpg")
+
+# num_iter = -1
+# if len(input_strings) == 0:
+#     print("How many iterations would you like to run the simulation for? Enter a value: ", end="")
+#     num_iter = int(input())
+# else:
+#     num_iter = len(list(input_strings[0]))
+
+# def init_computation():
+#     for neuron_id in range(1, result["neuron_count"]+1):
+#         print(neuron_id)
+
+# init_computation()
 
 # for iter in num_iter:
 #     neuron_computation()

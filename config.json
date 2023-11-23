@@ -1,0 +1,7 @@
+{
+    "verbose_roundwise" : true,
+    "input_path" : "inputs/input1.in",
+    "input_strings" : {
+        "I1": "1111111111"
+    } 
+}

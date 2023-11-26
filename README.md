@@ -18,6 +18,7 @@ Input files must be of the following format:
   - ```<delay>``` is a non-negative integer.
   - ```<nature>``` is either 0 (inhibitory) or 1 (excitory).
 
+---
 ### Example 1: ```buzzer.in```
 A buzzer net is represented by the following figure (Assume that the input line is ```I1```, and that output ```O1``` is the value on the feedback axon just before the delay element):
 
@@ -39,6 +40,7 @@ Note that the event at ```O1``` is denoted by $(\Sigma^{*}0~~ \cup ~~\lambda)(11
 
 If the same were to be run with the string ```1111``` as input on ```I1```, then the same output trace would be generated EXCEPT the last timeslot. Hence, ```{"O1": 0}``` would signify the string **not** being accepted.
 
+---
 ### Example 2: ```input2.in```
 The file ```inputs/input2.in``` encodes the following nerve net (Assume that ```B``` is ```I1```, and ```C``` is ```I2```, while ```D``` is ```O1```):
 
@@ -66,6 +68,7 @@ Let us check the output stream to verify this!
 
 Thus any scenario where the final input is 2 **with a 1 or 3 at some point in the prior past** is accepted, with ```{"O1": 1}``` at the final timeslot.
 
+---
 ### Other Info
 - If your nerve net has some amount of 'delay' with respect to its output, the input string must also have extra characters to compensate, since the event described could be something along the lines of $(0101)^{*}\Sigma\Sigma$ if the nerve net accepts $(0101)*$ with a delay of two time slots after the end of the last 'processed' character. Hence, be diligent when entering an input string.
 - If ```verbose_roundwise``` is set to ```false```, then the output will just be the value of ```O1``` at the final timeslot.

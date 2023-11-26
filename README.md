@@ -1,4 +1,4 @@
-# RnD-NerveNetSimulator
+# RnD-Nerve-Net-Simulator
 This repository contains files related to RnD Project (Autumn 2023).
 
 ### Instructions

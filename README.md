@@ -17,7 +17,7 @@ Input files must be of the following format:
   - ```<end-point>``` can be a neuron or an output line.
   - ```<delay>``` is a non-negative integer.
   - ```<nature>``` is either 0 (inhibitory) or 1 (excitory).
-
+****Ensure that the nerve net is well-formed, or it may enter an infinite loop (as it should, in that case).****
 ---
 ### Example 1: ```buzzer.in```
 A buzzer net is represented by the following figure (Assume that the input line is ```I1```, and that output ```O1``` is the value on the feedback axon just before the delay element):

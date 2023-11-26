@@ -72,7 +72,7 @@ Thus any scenario where the final input is 2 **with a 1 or 3 at some point in th
 
 ---
 ### Other Info
-- If your nerve net has some amount of 'delay' with respect to its output, the input string must also have extra characters to compensate, since the event described could be something along the lines of $(0101)^{*}\Sigma\Sigma$ if the nerve net accepts $(0101)*$ with a delay of two time slots after the end of the last 'processed' character. Hence, be diligent when entering an input string.
+- If your nerve net has some amount of 'delay' with respect to its output, the input string must also have extra characters to compensate, since the event described could be something along the lines of $(0101)^{ *}\Sigma\Sigma$ if the nerve net accepts $(0101)^{ *}$ with a delay of two time slots after the end of the last 'processed' character. Hence, be diligent when entering an input string.
 - If ```verbose_roundwise``` is set to ```false```, then the output will just be the value of ```O1``` at the final timeslot.
 
 

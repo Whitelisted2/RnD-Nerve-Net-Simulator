@@ -18,7 +18,7 @@ Input files must be of the following format:
   - ```<delay>``` is a non-negative integer.
   - ```<nature>``` is either 0 (inhibitory) or 1 (excitory).
 
-<h2>Ensure that the nerve net is well-formed, or it may enter an infinite loop (as it should, in that case).</h2>
+<h2>Ensure that the nerve net is well-formed (i.e., no zero-delay loops), or it may enter an infinite loop (as it should, in that case).</h2>
 
 ---
 ### Example 1: ```buzzer.in```

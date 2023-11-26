@@ -35,5 +35,5 @@ With ```"verbose_roundwise": true```, and ```"I1": "11111"```, on running ```pyt
 
 ![image](https://github.com/Whitelisted2/RnD-Nerve-Net-Simulator/assets/90827725/391b36d9-887c-488d-9603-aea7052b9ab2)
 
-Note that the event at ```O1``` is denoted by $(\Sigma^{*}0 U \lambda)(11)*1$
+Note that the event at ```O1``` is denoted by $(\Sigma^{*}0~~ U ~~~\lambda)(11)*1$
 

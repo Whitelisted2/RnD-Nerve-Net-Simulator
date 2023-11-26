@@ -20,14 +20,18 @@ Input files must be of the following format:
 
 ### Example 1: ```buzzer.in```
 A buzzer net is represented by the following figure (Assume that the input line is ```I1```, and that output ```O1``` is the value on the feedback axon just before the delay element):
+
 ![image](https://github.com/Whitelisted2/RnD-Nerve-Net-Simulator/assets/90827725/8a61d106-8e75-4aca-aacd-344e82182037)
 
 For this example, ```config.json``` is specified as:
+
 ![image](https://github.com/Whitelisted2/RnD-Nerve-Net-Simulator/assets/90827725/3d506ede-0932-446c-b77e-3774652d6628)
 
 Here, the attribute ```I1``` denotes the input stream incident to input line ```I1```. Also, the contents of ```inputs/buzzer.in``` specify the buzzer net as follows:
+
 ![image](https://github.com/Whitelisted2/RnD-Nerve-Net-Simulator/assets/90827725/e973022e-9401-4126-9bff-43793d1a2678)
 
 With ```"verbose_roundwise": true```, and ```"I1": "11111"```, on running ```python3 src/simulator.py``` the following output is observed, depicting the values of the neurons, axons, and I/O lines:
+
 ![image](https://github.com/Whitelisted2/RnD-Nerve-Net-Simulator/assets/90827725/391b36d9-887c-488d-9603-aea7052b9ab2)
 

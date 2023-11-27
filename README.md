@@ -76,3 +76,4 @@ Thus any scenario where the final input is 2 **with a 1 or 3 at some point in th
 - If ```verbose_roundwise``` is set to ```false```, then the output will just be the value of ```O1``` at the final timeslot.
 
 
+> "Let your rapidity be that of the wind, your compactness that of the forest." — Sun Tzu, The Art of War

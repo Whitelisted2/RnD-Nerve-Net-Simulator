@@ -242,10 +242,11 @@ def get_outputs(result):
 # digits = len(list(input_strings["I1"]))
 
 time=1
-if verbose:
-    print("At time 0")
-    print_neurons_state(result)
-    print_axons_state(result)
+# if verbose:
+#     print("At time 0")
+#     print_neurons_state(result)
+#     print_axons_state(result)
+#     print()
 for i in range(num_iter):
     input_rn = input_strings.copy()
     for j in input_rn:

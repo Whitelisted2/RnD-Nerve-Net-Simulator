@@ -2,7 +2,7 @@
 This repository contains files related to RnD Project (Autumn 2023).
 
 ### Definition and requisite theory
-The definition and functioning of nerve nets, as implemented in this repository, is aligned with that of the book 'Counter-Free Automata' by McNaughton and Papert, which is accessible via the Internet Archive at [this](https://archive.org/details/CounterFre_00_McNa) link. Note that the definition as per other sources may differ, with an inclusion of implicit neuron delay in some; the current implementation allows for this, if axon delay values are modified accordingly. (We have picked the more malleable definition.)
+The definition and functioning of nerve nets, as implemented in this repository, is aligned with that of the book 'Counter-Free Automata' by McNaughton and Papert, which is accessible via the Internet Archive at [this](https://archive.org/details/CounterFre_00_McNa) link. Note that the definition(s) from other sources could differ (e.g. an inclusion of implicit neuron delay) but such nerve nets can also be simulated here with suitable modifications in the inputs. (We have picked the more malleable definition.)
 
 ### Instructions
 - You can edit input file path in the file ```config.json```, and also enter the input string there. (An example is explained below.) The ```verbose_roundwise``` option allows you to view the internal junction/neuron values at each timeslot.
